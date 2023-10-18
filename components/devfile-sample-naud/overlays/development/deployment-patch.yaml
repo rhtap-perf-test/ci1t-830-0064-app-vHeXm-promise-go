@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-naud
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0064-tenant/ci1t-830-0064-app/devfile-sample-naud@sha256:536233d0f1dfa6925d5a53fb2c506cab8d9e460349dd706428fa8c9e0dbad582
+        name: my-nodejs
+        resources: {}
+status: {}
